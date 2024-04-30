@@ -1,0 +1,373 @@
+img {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 60px;
+  width: 1500px; /* Make the container full-width */
+}
+
+/* Style the image to fit inside the container */
+.container img {
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 1500px; /* Make the image fill the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any default inline spacing */
+}
+.navbar {
+  background-color: black;
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 18rem;
+  justify-content: space-between;
+}
+.card {
+  flex: 0 0 calc(33.33%-20px);
+  max-width: calc(33.33%-20px);
+  width: 100%;
+  display: inline;
+} */
+.card-img-top {
+  width: 221px;
+  height: 312px;
+}
+.price {
+  color: green;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.rate {
+  size: 0.5rem;
+  background-color: green;
+  color: white;
+  border: 0px;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  height: 200px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer-section {
+  flex: 1;
+  margin: 0 50px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 20;
+}
+.footer ul li {
+  margin-bottom: 3px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}
+
+.card-List {
+  /* display: flex; */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between cards */
+  gap: 20px; /* Add spacing between cards */
+  width: 350px;
+/* Set the width of the cards */
+  /* border: 1px solid #ccc; */
+  padding: 18px;
+  margin: 1px; /* Add some margin to separate the cards */
+  display: inline-block; /* Make the cards display inline-block to appear adjacent */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* background-color: #fff; */
+  border-radius: 5px;
+}
+
+/* Style for each card within the card-list */
+.card {
+  color: #ccc;
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 300px;
+  height: 800px;
+  
+  flex: 0 0 calc(18% - 10px); /* Four cards in a row, with 20px spacing */
+  /* background-color: #fff; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin to the bottom of each card */
+  /* Add any additional card styling as needed */
+}
+
+/* Media query for responsive design */
+@media (max-width: 680px) {
+  .card {
+    flex: 0 0 calc(33% - 10px); /* Two cards in a row on smaller screens */
+  }
+}
+.box {
+  font-size: 16px;
+  width: 100vw;
+  max-width: 80em;
+  /* background: linear-gradient(to bottom, yellow 25%, #F5E8B7 40%); */
+  padding: 3em 1.8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.5em;
+  box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
+}
+.first {
+  height: 600px;
+  width: 500px;
+}
+.value {
+  background-color: black;
+}
+
+
+/* Navbar.css */
+
+/* Navbar.css */
+
+.navbar-container {
+  max-width: 100%; /* Adjust as needed */
+  width:100%;
+  margin: 0 auto; /* Center the navbar */
+  border: 1px solid #ccc; /* Add a border around the navbar */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.navbar {
+  background-color: transparent;display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 10px;
+  margin-right: 450px;
+  padding: 0;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center; /* Align submenu content vertically */
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-menu li a:hover {
+  color:yellowgreen; /* Change color on hover */
+  /* background-color: #ddd; */
+}
+
+
+/* FullVideo.css */
+
+.full-video {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  */
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+}
+
+.full-video video {
+  /* position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.video-text {
+  position: absolute;
+  top: 65%;
+  left: 77%;
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+  color: white;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+}
+.black {
+  color: black; /* Color the first word blue */
+}
+
+.red {
+  color: red; /* Color the second word red */
+}
+
+/* ImageRow.css */
+
+/* ImageRow.css */
+
+/* ImageRow.css */
+
+.image-row {
+  position:  relative;
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  /* margin-top: 10px;  */
+/* Add some top margin for spacing */
+  z-index: 1;
+}
+
+.image-row img {
+  max-width: 100%;
+  margin-left: 0px;
+  padding-right: 0px; /* Set max width of the images to 600px */
+  height: 600px; /* Let the height adjust to maintain aspect ratio */
+}
+
+.image1 {
+  max-width: 90%; 
+  width: 1200px;
+  z-index: 1;/* Set max width of the first image to 60% */
+}
+
+.image2 {
+  max-width: 60%;
+  width: 800px;
+
+  z-index: 1; /* Set max width of the second image to 40% */
+}
+.image-row::before {
+  content: '';
+  position: absolute;
+  top: 100%; /* Position it below the video */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Adjust as needed for spacing */
+}
+
+
+.content {
+  position: absolute;
+  margin-top: 100vh; /* Push content below the FullVideo component */
+}
+.content1 {
+  position: absolute;
+  margin-top: 180vh; /* Push content below the FullVideo component */
+}
+.button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; /* Position button on the bottom left */
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  background-color: transparent; /* Set background color to transparent */
+}
+.cart-icon {
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  cursor: pointer;
+
+}
+
+.cart-icon img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.cart-icon:hover {
+  filter: brightness(80%);
+  background-color: #009688;
+}
+
+.btn-light {
+  color: #009688;
+  border-color: #009688;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-light:hover {
+  background-color: #009688;
+  color: #ffffff;
+}
